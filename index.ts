@@ -6,7 +6,7 @@ const userId = 1
 
 ;(async () => {
   try {
-  const { data } = await axios.get(`https://jsonplaceholder.typicode.com/user/${userId}`)
+    const { data } = await axios.get(`https://jsonplaceholder.typicode.com/user/${userId}`)
     console.log('axios:', data)
   } catch (e) {
     console.log('axios:', e.message)
